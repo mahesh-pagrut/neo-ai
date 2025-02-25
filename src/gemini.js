@@ -5,7 +5,7 @@ import{
     GoogleGenerativeAI,
     HarmCategory,
     HarmBlockThreshold,
-  } from ("@google/generative-ai");
+  } from "@google/generative-ai";
   
   const genAI = new GoogleGenerativeAI(apiKey);
   
@@ -17,7 +17,7 @@ import{
     temperature: 1,
     topP: 0.95,
     topK: 40,
-    maxOutputTokens: 8192,
+    maxOutputTokens: 30,
     responseMimeType: "text/plain",
   };
   
@@ -28,8 +28,8 @@ import{
       ],
     });
   
-    const result = await chatSession.sendMessage("prompt");
-    console.log(result.response.text());
+    const result = await chatSession.sendMessage(prompt);
+    return result.response.text();
   }
   
-  export default run();
+  export default run;
