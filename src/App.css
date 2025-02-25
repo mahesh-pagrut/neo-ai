@@ -17,7 +17,7 @@
 }
 
 span{
-    background: linear-gradient(to right,rgb(34, 244, 255), rgb(255, 45, 153));
+    background: linear-gradient(to right,rgb(196, 18, 255), rgb(119, 0, 255));
     background-clip: text;
     color: transparent;
     font-size: 2vmax;
@@ -35,4 +35,5 @@ button{
     background-color: rgb(100, 56, 245);
     box-shadow: 2px 2px 50px rgb(100, 56, 245);
     color: white;
+    margin: 10px;
 }
