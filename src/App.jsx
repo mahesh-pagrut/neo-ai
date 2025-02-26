@@ -7,7 +7,7 @@ import speakImage from "./assets/speak.gif"
 import aigif from "./assets/aiVoice.gif"
 
 function App() {
-  let {recognition, speaking, setSpeaking, prompt ,setPrompt ,response} = useContext(datacontext);
+  let {recognition, speaking, setSpeaking, prompt ,setPrompt ,response, setResponse} = useContext(datacontext);
 
 
   return (
@@ -18,11 +18,12 @@ function App() {
       {!speaking? <button onClick={()=>{
         setPrompt('listening')
         setSpeaking(true)
+        setResponse(false)
         recognition.start()
         }}>Click here <CiMicrophoneOn/></button>
         :
         <div className='response'>
-          {!response?  <img src={speakImage} alt="speak spinner" id='speak'/>
+          {!response? <img src={speakImage} alt="speak spinner" id='speak'/>
           :
            <img src={aigif} alt="AI gif" id='aigif'/>
           }

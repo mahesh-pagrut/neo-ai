@@ -43,8 +43,10 @@ button{
 }
 
 p{
-    font-size: 1.5vmax;
+    font-size: 1.3vmax;
     color: white;
+    text-align: center;
+    padding: 0 40px;
 }
 
 .response {
