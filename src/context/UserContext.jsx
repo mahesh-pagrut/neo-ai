@@ -139,7 +139,7 @@ function UserContext({ children }) {
     // Reset speaking state after 5 seconds for all responses
     setTimeout(() => {
       setSpeaking(false);
-    }, 5000);
+    }, 10000);
   }
 
   let value = {
