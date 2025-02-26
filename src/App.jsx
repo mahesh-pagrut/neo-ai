@@ -7,7 +7,7 @@ import speakImage from "./assets/speak.gif"
 import aigif from "./assets/aiVoice.gif"
 
 function App() {
-  const {recognition, speaking, setSpeaking, prompt, response} = useContext(datacontext);
+  let {recognition, speaking, setSpeaking, prompt ,setPrompt ,response} = useContext(datacontext);
 
 
   return (
@@ -15,7 +15,8 @@ function App() {
       <img src={va} alt='neo main' id='sh'/>
       <span>I'm Neo, your personal AI assistant model</span>
 
-      {!speaking? <button onClick={()=> {
+      {!speaking? <button onClick={()=>{
+        setPrompt('listening')
         setSpeaking(true)
         recognition.start()
         }}>Click here <CiMicrophoneOn/></button>

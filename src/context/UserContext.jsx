@@ -25,6 +25,9 @@ function UserContext({children}) {
         setPrompt(text)
         speak(text)
         setResponse(true)
+        setTimeout(() =>{
+            setSpeaking(false)
+        }, 5000)
     }
 
     let speechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition
