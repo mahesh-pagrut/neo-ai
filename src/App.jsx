@@ -13,14 +13,14 @@ function App() {
   return (
     <div className='main'>
       <img src={va} alt='neo main' id='sh'/>
-      <span>I'm Neo, your personal AI assistant model</span>
+      <span>I'm Neo, your personal AI assistant built by Mahesh</span>
 
       {!speaking? <button onClick={()=>{
         setPrompt('listening')
         setSpeaking(true)
         setResponse(false)
         recognition.start()
-        }}>Click here <CiMicrophoneOn/></button>
+        }}>Click Here<CiMicrophoneOn/></button>
         :
         <div className='response'>
           {!response? <img src={speakImage} alt="speak spinner" id='speak'/>
