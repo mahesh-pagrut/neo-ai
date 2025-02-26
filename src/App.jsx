@@ -3,23 +3,29 @@ import "./App.css";
 import va from "./assets/ai.png";
 import { CiMicrophoneOn } from "react-icons/ci";
 import { datacontext } from './context/UserContext';
+import speakImage from "./assets/speak.gif"
+import aigif from "./assets/aiVoice.gif"
 
 function App() {
-  const {recognition, speaking, setSpeaking} = useContext(datacontext);
+  const {recognition, speaking, setSpeaking, prompt, response} = useContext(datacontext);
 
 
   return (
     <div className='main'>
       <img src={va} alt='neo main' id='sh'/>
       <span>I'm Neo, your personal AI assistant model</span>
+
       {!speaking? <button onClick={()=> {
         setSpeaking(true)
         recognition.start()
         }}>Click here <CiMicrophoneOn/></button>
-        
-        : 
-        <div>
-        
+        :
+        <div className='response'>
+          {!response?  <img src={speakImage} alt="speak spinner" id='speak'/>
+          :
+           <img src={aigif} alt="AI gif" id='aigif'/>
+          }
+          <p>{prompt}</p>
         </div>
         }
     </div>
