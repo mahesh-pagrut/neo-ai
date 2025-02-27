@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import "./App.css";
-import va from "./assets/ai.png";
+import va from "./assets/ai.gif";
 import { CiMicrophoneOn } from "react-icons/ci";
 import { datacontext } from "./context/UserContext";
 import speakImage from "./assets/speak.gif";
