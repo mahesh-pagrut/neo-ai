@@ -13,7 +13,7 @@
     justify-content: center;
     text-align: center;
     height: 100vh;
-    padding: 20px;
+    padding: 10px;
     background-color: black;
 } 
 
@@ -28,7 +28,8 @@
     width: 400px;
     max-width: 80%;
     height: auto;
-    margin-top: -150px;
+    margin-bottom: -50px;
+    margin-top: -50px;
   }
   
   span {
@@ -38,6 +39,7 @@
     font-size: 1.5vmax;
     text-align: center;
     margin-bottom: 20px;
+    padding: 10px;
   }
     
   button {
@@ -69,9 +71,7 @@
   }
   
   #speak{
-    width: 60px;
-    max-width: 50%;
-    height: auto;
+    height: 70px;
   }
 
   
@@ -94,15 +94,18 @@
   
     #sh {
         width: 320px;
-        margin-top: -100px;
       }
+    #speak{
+        height: 70px;
+      }
+    
   }
 
   /* Small screens (Mobile devices) */
   @media (max-width: 480px) {
     span {
       font-size: 0.9rem;
-      margin-top: 10px;
+      margin-top: 30px;
     } */
   
     button {
@@ -111,18 +114,16 @@
     }
   
     #sh {
-      width: 320px;
+      width: 280px;
       margin-top: -100px;
     }
 
-
-
+    #speak{
+        height: 70px;
+      }
+    
     #aigif {
         width: 40%;
-        height: auto;
-        position: relative;
-        margin-top: -20px; /* Overlapping from the top */
-        margin-bottom: -10px;
     }
   }
   
