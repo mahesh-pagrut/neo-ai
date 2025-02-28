@@ -39,13 +39,15 @@ function App() {
         </button>
       ) : (
         <div className="response">
+        <div className="gif-container">
           {!response ? (
             <img src={speakImage} alt="speak spinner" id="speak" />
           ) : (
             <img src={aigif} alt="AI gif" id="aigif" />
           )}
-          <p>{prompt}</p>
         </div>
+        <p>{prompt}</p>
+      </div>
       )}
     </div>
   );

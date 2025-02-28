@@ -43,7 +43,7 @@ function UserContext({ children }) {
 
     setTimeout(() => {
       setSpeaking(false);
-    }, 5000);
+    }, 10000);
   }
 
   let speechRecognition =

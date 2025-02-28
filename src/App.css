@@ -1,12 +1,10 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
 
-  }
-  
-  .main {
+.main {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,22 +15,14 @@
     background-color: black;
 } 
 
-#aigif {
-  width: 270px;
-  max-width: 80%; 
-  height: auto;
-  clip-path: inset(20% 0 20% 0);
-  margin: 0%;
-}
-  #sh {
-    width: 400px;
-    max-width: 80%;
+#sh {
+    width: 450px;
+    max-width: 90%;
     height: auto;
-    margin-bottom: -50px;
     margin-top: -100px;
-  }
-  
-  span {
+}
+
+span {
     background: linear-gradient(to right, rgb(24, 242, 227), rgb(234, 31, 245));
     background-clip: text;
     color: transparent;
@@ -40,9 +30,9 @@
     text-align: center;
     margin-bottom: 20px;
     padding: 10px;
-  }
-    
-  button {
+}
+
+button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -55,167 +45,86 @@
     border: none;
     box-shadow: 0px 0px 5px 0px rgb(140, 76, 255);
     transition: 0.3s;
-  }
-  
-  button:hover {
+}
+
+button:hover {
     transform: scale(1.02);
     box-shadow: 0px 5px 10px rgb(140, 76, 255);
-  }
-   
-   .response {
+}
+
+.response {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 5px;
-  }
-  
-  #speak{
-    height: 70px;
-  }
-
-  
-  
-  p {
-    font-size: 1rem;
-    color: #555;
-  } 
-
-  /* Medium screens (Tablets and small laptops) */
-   @media (max-width: 768px) {
-    span {
-      font-size: 1rem;
-    }
-  
-    button {
-      font-size: 0.9rem;
-      padding: 8px 12px;
-    }
-  
-    #sh {
-        width: 320px;
-    
-      }
-    #speak{
-        height: 70px;
-      }
-    
-  }
-
-  /* Small screens (Mobile devices) */
-  @media (max-width: 480px) {
-    span {
-      font-size: 0.9rem;
-      margin-top: 30px;
-    } */
-  
-    button {
-      font-size: 0.8rem;
-      padding: 6px 10px;
-    }
-  
-    #sh {
-      width: 280px;
-      margin-top: -100px;
-    }
-
-    #speak{
-        height: 70px;
-      }
-    
-    #aigif {
-        width: 40%;
-    }
-  }
-  
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-
-.main {
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  flex-direction: column;
-  padding: 20px;
-  gap: 10px;
 }
 
-#sh {
-  width: 100%;
-  max-width: 500px;
-  height: auto;
-  margin-top: -60px;
-
-
+/* ✅ NEW: Fixed container to prevent GIF size changes */
+.gif-container {
+    width: 270px; /* Use the largest GIF width */
+    height: 100px; /* Set a fixed height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Prevents stretching */
 }
 
-span {
-  background: linear-gradient(to right, rgb(24, 242, 227), rgb(234, 31, 245));
-  background-clip: text;
-  color: transparent;
-  font-size: 1.5vmax;
-  text-align: center;
-  margin-bottom: 20px;
+/* ✅ Ensure both GIFs stay within the same size */
+#speak, #aigif {
+    max-width: 100%; 
+    max-height: 100%;
+    object-fit: contain; /* Keeps aspect ratio */
 }
 
-button {
-  width: 180px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  font-size: 20px;
-  border-radius: 40px;
-  background-color: transparent;
-  color: white;
-  border: none;
-  box-shadow: 0px 0px 5px 0px rgb(140, 76, 255);
-  cursor: pointer;
-  transition: 0.3s;
-}
-button:hover {
-  transform: scale(1.02);
-  box-shadow: 0px 5px 10px rgb(140, 76, 255);
-}
+/* Animation for speak GIF */
 #speak {
-  width: 100px;
+    opacity: 0; 
+    animation: fadeInOut 4s infinite; 
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    25% { opacity: 1; } /* Fade in */
+    75% { opacity: 1; } /* Stay visible */
+    100% { opacity: 0; } /* Fade out */
 }
 
 p {
-  font-size: 1.3vmax;
-  color: white;
-  text-align: center;
-  padding: 0 40px;
+    font-size: 1rem;
+    color: #555;
 }
 
-.response {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 10px;
+/* ✅ Responsive adjustments */
+
+/* Medium screens (Tablets and small laptops) */
+@media (max-width: 768px) {
+    span {
+        font-size: 1rem;
+    }
+  
+    button {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+
+    #sh {
+        width: 350px;
+    }
 }
 
-#aigif {
-  width: 50vh;
-  height: 100px;
+/* Small screens (Mobile devices) */
+@media (max-width: 480px) {
+    span {
+        font-size: 0.9rem;
+        margin-top: 30px;
+    }
+  
+    button {
+        font-size: 0.8rem;
+        padding: 6px 10px;
+    }
 
-  } */
+    #sh {
+        width: 280px;
+    }
+}
