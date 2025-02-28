@@ -1,3 +1,145 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+  }
+  
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    padding: 20px;
+    background-color: black;
+  } 
+  
+  #sh {
+    width: 400px;
+    max-width: 80%;
+    height: auto;
+    margin-top: -150px;
+  }
+  
+  span {
+    background: linear-gradient(to right, rgb(24, 242, 227), rgb(234, 31, 245));
+    background-clip: text;
+    color: transparent;
+    font-size: 1.5vmax;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+    
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 40px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    box-shadow: 0px 0px 5px 0px rgb(140, 76, 255);
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 5px 10px rgb(140, 76, 255);
+  }
+   
+   .response {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  #speak{
+    width: 100px;
+    max-width: 50%;
+    height: auto;
+  }
+
+  #aigif {
+    width: 320px;
+    max-width: 90%; 
+    height: auto;
+  }
+  
+  
+  p {
+    font-size: 1rem;
+    color: #555;
+  } 
+
+  /* Medium screens (Tablets and small laptops) */
+   @media (max-width: 768px) {
+    span {
+      font-size: 1rem;
+    }
+  
+    button {
+      font-size: 0.9rem;
+      padding: 8px 12px;
+    }
+  
+    #sh {
+      width: 350px;
+    }
+  }
+
+  /* Small screens (Mobile devices) */
+  @media (max-width: 480px) {
+    span {
+      font-size: 0.9rem;
+      margin-top: 10px;
+    } */
+  
+    button {
+      font-size: 0.8rem;
+      padding: 6px 10px;
+    }
+  
+    #sh {
+      width: 320px;
+      margin-top: -100px;
+    }
+
+
+
+    #aigif {
+        width: 50%;
+        height: auto;
+        position: relative;
+        margin-top: -20px; /* Overlapping from the top */
+        margin-bottom: -10px;
+    }
+  }
+  
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
 .main {
   width: 100%;
   height: 100vh;
@@ -12,9 +154,10 @@
 
 #sh {
   width: 100%;
-  max-width: 600px;
+  max-width: 500px;
   height: auto;
-  margin: 20px 0 50px 0;
+  margin-top: -60px;
+
 
 }
 
@@ -24,7 +167,7 @@ span {
   color: transparent;
   font-size: 1.5vmax;
   text-align: center;
-  margin: 20px;
+  margin-bottom: 20px;
 }
 
 button {
@@ -69,4 +212,5 @@ p {
 #aigif {
   width: 50vh;
   height: 100px;
-}
+
+  } */
