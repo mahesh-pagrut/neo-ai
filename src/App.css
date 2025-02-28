@@ -15,8 +15,15 @@
     height: 100vh;
     padding: 20px;
     background-color: black;
-  } 
-  
+} 
+
+#aigif {
+  width: 270px;
+  max-width: 80%; 
+  height: auto;
+  clip-path: inset(20% 0 20% 0);
+  margin: 0%;
+}
   #sh {
     width: 400px;
     max-width: 80%;
@@ -58,20 +65,15 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 5px;
   }
   
   #speak{
-    width: 100px;
+    width: 60px;
     max-width: 50%;
     height: auto;
   }
 
-  #aigif {
-    width: 320px;
-    max-width: 90%; 
-    height: auto;
-  }
   
   
   p {
@@ -91,8 +93,9 @@
     }
   
     #sh {
-      width: 350px;
-    }
+        width: 320px;
+        margin-top: -100px;
+      }
   }
 
   /* Small screens (Mobile devices) */
@@ -115,7 +118,7 @@
 
 
     #aigif {
-        width: 50%;
+        width: 40%;
         height: auto;
         position: relative;
         margin-top: -20px; /* Overlapping from the top */
