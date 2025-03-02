@@ -16,10 +16,10 @@
 } 
 
 #sh {
-    width: 400px;
-    max-width: 100%;
+    width: 350px;
+    max-width: 90%;
     height: auto;
-    margin-top: -80px;
+    margin-top: -60px;
 }
 
 span {
