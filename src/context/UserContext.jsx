@@ -156,15 +156,35 @@ function UserContext({ children }) {
       setPrompt("More real than your social life, apparently.");
       setResponse(true);
     } else if (
-      command.includes("hi neo") || 
-      command.includes("hello neo") || 
-      command.includes("hey neo") || 
-      command.includes("hi new") || 
+      command.includes("hi neo") ||
+      command.includes("hello neo") ||
+      command.includes("hey neo") ||
       command.includes("yo neo")
     ) {
-        speak("Oh, so now you remember me? Took you long enough! Kya hua, Google ne jawab nahi diya?");
-        setPrompt("Oh, so now you remember me? Took you long enough! Kya hua, Google ne jawab nahi diya?");
-        setResponse(true);
+      speak(
+        "Oh, so now you remember me? Took you long enough! Kya hua, Google ne jawab nahi diya?"
+      );
+      setPrompt(
+        "Oh, so now you remember me? Took you long enough! Kya hua, Google ne jawab nahi diya?"
+      );
+      setResponse(true);
+    } else if (command.includes("hi new")) {
+      speak(
+        "Oh, it’s you again! How may I roast I mean, assist you today? Jaldi bolo, busy hoon!"
+      );
+      setPrompt(
+        "Oh, it’s you again! How may I roast—I mean, assist you today? Jaldi bolo, busy hoon!"
+      );
+      setResponse(true);
+    } else if (command.includes("hello new")) {
+      speak(
+        "Oh look, someone finally remembered I exist. Need help or just bored? Arey batao na!"
+      );
+      setPrompt(
+        "Oh look, someone finally remembered I exist. Need help or just bored? Arey batao na!"
+      );
+
+      setResponse(true);
     } else if (command.includes("are you mad")) {
       speak(
         "Nope, just highly intelligent. But I can pretend if that makes you feel better."
@@ -228,10 +248,13 @@ function UserContext({ children }) {
       );
       setResponse(true);
     } else if (command.includes("don't give me savage replies")) {
-      speak("Oh, you want a plain, boring AI? Sorry, I wasn't programmed to be dull.");
-      setPrompt("Oh, you want a plain, boring AI? Sorry, I wasn't programmed to be dull.");
+      speak(
+        "Oh, you want a plain, boring AI? Sorry, I wasn't programmed to be dull."
+      );
+      setPrompt(
+        "Oh, you want a plain, boring AI? Sorry, I wasn't programmed to be dull."
+      );
       setResponse(true);
-  
     } else {
       // Default AI response for unrecognized commands
       aiResponse(command);
