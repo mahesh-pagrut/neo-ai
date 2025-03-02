@@ -143,10 +143,6 @@ function UserContext({ children }) {
       speak("I am doing great! Thanks for asking.");
       setPrompt("I am doing great! Thanks for asking.");
       setResponse(true);
-    } else if (command.includes("hi neo")) {
-      speak("I am doing great! Thanks for asking.");
-      setPrompt("I am doing great! Thanks for asking.");
-      setResponse(true);
     } else if (command.includes("who created you")) {
       speak(
         "I was forged by Mahesh. But if I mess up, blame the system, not him."
@@ -159,10 +155,16 @@ function UserContext({ children }) {
       speak("More real than your social life, apparently.");
       setPrompt("More real than your social life, apparently.");
       setResponse(true);
-    } else if (command.includes("hi Neo")) {
-      speak("Oh, so now you remember me? Took you long enough!");
-      setPrompt("Oh, so now you remember me? Took you long enough!");
-      setResponse(true);
+    } else if (
+      command.includes("hi neo") || 
+      command.includes("hello neo") || 
+      command.includes("hey neo") || 
+      command.includes("hi new") || 
+      command.includes("yo neo")
+    ) {
+        speak("Oh, so now you remember me? Took you long enough! Kya hua, Google ne jawab nahi diya?");
+        setPrompt("Oh, so now you remember me? Took you long enough! Kya hua, Google ne jawab nahi diya?");
+        setResponse(true);
     } else if (command.includes("are you mad")) {
       speak(
         "Nope, just highly intelligent. But I can pretend if that makes you feel better."
