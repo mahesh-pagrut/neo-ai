@@ -123,10 +123,6 @@ function UserContext({ children }) {
       speak(responseText);
       setPrompt(responseText);
       setResponse(true);
-    } else if (command.includes("who created you")) {
-      speak("I was created by Mahesh.");
-      setPrompt("I was created by Mahesh.");
-      setResponse(true);
     } else if (command.includes("who built you")) {
       speak("My name is Neo and I was created by Mahesh.");
       setPrompt("My name is Neo and I was created by Mahesh.");
@@ -159,6 +155,7 @@ function UserContext({ children }) {
       command.includes("hi neo") ||
       command.includes("hello neo") ||
       command.includes("hey neo") ||
+      command.includes("hey new") ||
       command.includes("yo neo")
     ) {
       speak(
