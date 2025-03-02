@@ -5,6 +5,7 @@ import { CiMicrophoneOn } from "react-icons/ci";
 import { datacontext } from "./context/UserContext";
 import speakImage from "./assets/speak.gif";
 import aigif from "./assets/aiVoice.gif";
+import Footer from "./components/Footer";
 
 function App() {
   let {
@@ -20,7 +21,7 @@ function App() {
   return (
     <div className="main">
       <img src={va} alt="neo main" id="sh" />
-      <span>I'm Neo, your personal AI assistant built by Mahesh</span>
+      <span>I'm Neo, your personal AI assistant</span>
 
       {!speaking ? (
         <button
@@ -49,6 +50,7 @@ function App() {
         <p>{prompt}</p>
       </div>
       )}
+      <Footer/>
     </div>
   );
 }

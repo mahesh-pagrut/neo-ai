@@ -16,7 +16,7 @@
 } 
 
 #sh {
-    width: 350px;
+    width: 330px;
     max-width: 90%;
     height: auto;
     margin-top: -60px;
@@ -94,14 +94,55 @@ p {
     color: #555;
 }
 
-/* ✅ Responsive adjustments */
+
+
+
+/* footer css */
+
+.footer {
+    width: 100%;
+    padding: 10px 0;
+    background: black; /* Keeping background dark */
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* Footer text - small, low opacity */
+.footer-text {
+    font-size: 12px;
+    color: rgb(42, 42, 42); /* Even lower opacity for subtle look */
+    margin-top: 5px;
+}
+
+/* Icons - smaller size and low opacity */
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.icon {
+    font-size: 12px; /* Smaller icon size */
+    color: rgba(255, 255, 255, 0.1); /* Low opacity */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Icon hover effect */
+.icon:hover {
+    transform: scale(1.2);
+    color: #814af7; /* Soft blue */
+}
+
+
 
 /* Medium screens (Tablets and small laptops) */
 @media (max-width: 768px) {
     span {
         font-size: 1rem;
     }
-  
+
     button {
         font-size: 0.9rem;
         padding: 8px 12px;
@@ -109,9 +150,20 @@ p {
 
     #sh {
         width: 380px;
-    
     }
-   
+
+    /* Footer adjustments */
+    .footer {
+        padding: 12px 0;
+    }
+
+    .footer-text {
+        font-size: 11px; /* Slightly smaller text for tablets */
+    }
+
+    .icon {
+        font-size: 12px; /* Reduce icon size */
+    }
 }
 
 /* Small screens (Mobile devices) */
@@ -120,7 +172,7 @@ p {
         font-size: 0.9rem;
         margin-top: 30px;
     }
-  
+
     button {
         font-size: 0.8rem;
         padding: 6px 10px;
@@ -128,6 +180,22 @@ p {
 
     #sh {
         width: 300px;
-    
+    }
+
+    /* Footer adjustments */
+    .footer {
+        padding: 8px 0;
+    }
+
+    .footer-text {
+        font-size: 10px; /* Even smaller for mobiles */
+    }
+
+    .icons {
+        gap: 8px; /* Reduce icon spacing */
+    }
+
+    .icon {
+        font-size: 10px; /* Smaller icons for mobile */
     }
 }
