@@ -152,7 +152,7 @@ function UserContext({ children }) {
       setPrompt("More real than your social life, apparently.");
       setResponse(true);
     } else if (
-      command.includes("hi neo") ||
+      command.includes("hi new") ||
       command.includes("hello neo") ||
       command.includes("hey neo") ||
       command.includes("hey new") ||
@@ -165,7 +165,7 @@ function UserContext({ children }) {
         "Oh, so now you remember me? Took you long enough! Kya hua, Google ne jawab nahi diya?"
       );
       setResponse(true);
-    } else if (command.includes("hi new")) {
+    } else if (command.includes("hi neo")) {
       speak(
         "Oh, it’s you again! How may I roast I mean, assist you today? Jaldi bolo, busy hoon!"
       );
