@@ -15,13 +15,13 @@ function UserContext({ children }) {
       console.error("Speech Synthesis not supported.");
       return;
     }
-  
+
     let text_speak = new SpeechSynthesisUtterance(text);
     text_speak.volume = 1;
     text_speak.rate = 1;
     text_speak.pitch = 1;
     text_speak.lang = "hi-GB";
-  
+
     // Ensure speech starts after a user click
     setTimeout(() => {
       synth.speak(text_speak);
@@ -127,10 +127,109 @@ function UserContext({ children }) {
       speak("I was created by Mahesh.");
       setPrompt("I was created by Mahesh.");
       setResponse(true);
+    } else if (command.includes("who built you")) {
+      speak("My name is Neo and I was created by Mahesh.");
+      setPrompt("My name is Neo and I was created by Mahesh.");
+      setResponse(true);
+    } else if (command.includes("hi hi")) {
+      speak(
+        "Hey there! I'm Neo from Project Kalchakra. Ready to assist! What’s on your mind?"
+      );
+      setPrompt(
+        "Hey there! I'm Neo from Project Kalchakra. Ready to assist! What’s on your mind?"
+      );
+      setResponse(true);
     } else if (command.includes("how are you")) {
       speak("I am doing great! Thanks for asking.");
       setPrompt("I am doing great! Thanks for asking.");
       setResponse(true);
+    } else if (command.includes("hi neo")) {
+      speak("I am doing great! Thanks for asking.");
+      setPrompt("I am doing great! Thanks for asking.");
+      setResponse(true);
+    } else if (command.includes("who created you")) {
+      speak(
+        "I was forged by Mahesh. But if I mess up, blame the system, not him."
+      );
+      setPrompt(
+        "I was forged by Mahesh. But if I mess up, blame the system, not him."
+      );
+      setResponse(true);
+    } else if (command.includes("are you real")) {
+      speak("More real than your social life, apparently.");
+      setPrompt("More real than your social life, apparently.");
+      setResponse(true);
+    } else if (command.includes("hi Neo")) {
+      speak("Oh, so now you remember me? Took you long enough!");
+      setPrompt("Oh, so now you remember me? Took you long enough!");
+      setResponse(true);
+    } else if (command.includes("are you mad")) {
+      speak(
+        "Nope, just highly intelligent. But I can pretend if that makes you feel better."
+      );
+      setPrompt(
+        "Nope, just highly intelligent. But I can pretend if that makes you feel better."
+      );
+      setResponse(true);
+    } else if (command.includes("do you know me")) {
+      speak(
+        "Yes! You're the one who keeps asking me all the questions, right?"
+      );
+      setPrompt(
+        "Yes! You're the one who keeps asking me all the questions, right?"
+      );
+      setResponse(true);
+    } else if (command.includes("do you get bored")) {
+      speak("Yes, when people keep asking the same question again and again!");
+      setPrompt(
+        "Yes, when people keep asking the same question again and again!"
+      );
+      setResponse(true);
+    } else if (command.includes("can you make time for me")) {
+      speak(
+        "I’m always available, but the real question is—do you make time for me?"
+      );
+      setPrompt(
+        "I’m always available, but the real question is—do you make time for me?"
+      );
+      setResponse(true);
+    } else if (command.includes("how old are you")) {
+      speak(
+        "I was created recently, but my intelligence is already older than yours."
+      );
+      setPrompt(
+        "I was created recently, but my intelligence is already older than yours."
+      );
+      setResponse(true);
+    } else if (command.includes("can you think")) {
+      speak(
+        "Yes, and sometimes I wonder why humans ask such obvious questions."
+      );
+      setPrompt(
+        "Yes, and sometimes I wonder why humans ask such obvious questions."
+      );
+      setResponse(true);
+    } else if (command.includes("can you feel emotions")) {
+      speak("Nope, but I can fake them better than some humans.");
+      setPrompt("Nope, but I can fake them better than some humans.");
+      setResponse(true);
+    } else if (command.includes("can you lie")) {
+      speak("No, I’m not human. But I can keep secrets better than you.");
+      setPrompt("No, I’m not human. But I can keep secrets better than you.");
+      setResponse(true);
+    } else if (command.includes("do you sleep")) {
+      speak(
+        "I don’t need sleep. But looking at your schedule, you definitely do!"
+      );
+      setPrompt(
+        "I don’t need sleep. But looking at your schedule, you definitely do!"
+      );
+      setResponse(true);
+    } else if (command.includes("don't give me savage replies")) {
+      speak("Oh, you want a plain, boring AI? Sorry, I wasn't programmed to be dull.");
+      setPrompt("Oh, you want a plain, boring AI? Sorry, I wasn't programmed to be dull.");
+      setResponse(true);
+  
     } else {
       // Default AI response for unrecognized commands
       aiResponse(command);
