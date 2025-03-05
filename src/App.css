@@ -32,10 +32,8 @@ span {
     padding: 10px;
 }
 
-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+.click-button {
     font-size: 1rem;
     padding: 10px 15px;
     cursor: pointer;
@@ -47,10 +45,11 @@ button {
     transition: 0.3s;
 }
 
-button:hover {
+.click-button:hover {
     transform: scale(1.02);
     box-shadow: 0px 5px 10px rgb(140, 76, 255);
 }
+
 
 .response {
     display: flex;
@@ -58,6 +57,71 @@ button:hover {
     align-items: center;
     justify-content: center;
 }
+
+
+
+.top-right {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+/* Style for settings and refresh buttons */
+.settings-button, .refresh-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 40px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    transition: 0.5s;
+    padding: 2px;
+}
+
+.settings-button:hover, .refresh-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px 2px rgb(140, 76, 255);
+    background-color: white;
+    color: black;
+}
+
+/* Modal for settings */
+.settings-modal {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    border: solid rgb(139, 76, 255) 1px;
+    box-shadow: 0px 0px 10px rgba(140, 76, 255, 0.5);
+    max-width: 250px;
+}
+
+.settings-modal h3 {
+    margin: 0;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.settings-modal ul {
+    padding: 0;
+    margin-top: 10px;
+}
+
+.settings-modal li {
+    font-size: 0.6rem;
+    list-style: none;
+    padding: 5px 0;
+}
+
 
 /* ✅ NEW: Fixed container to prevent GIF size changes */
 .gif-container {
@@ -197,5 +261,9 @@ p {
 
     .icon {
         font-size: 10px; /* Smaller icons for mobile */
+    }
+
+    .settings-button, .refresh-button {
+        font-size: 0.8rem;
     }
 }
