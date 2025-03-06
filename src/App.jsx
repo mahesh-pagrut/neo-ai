@@ -4,7 +4,7 @@ import va from "./assets/ai.gif";
 import { CiMicrophoneOn } from "react-icons/ci";
 import { IoMdRefresh } from "react-icons/io";
 import { FiSettings } from "react-icons/fi"; // Import settings icon
-import { datacontext } from "./context/UserContext";
+import { DataContext} from "./context/UserContext";
 import speakImage from "./assets/speak.gif";
 import aigif from "./assets/aiVoice.gif";
 import Footer from "./components/Footer";
@@ -19,7 +19,7 @@ function App() {
     setPrompt,
     response,
     setResponse,
-  } = useContext(datacontext);
+  } = useContext(DataContext);
 
   return (
     <div className="main">

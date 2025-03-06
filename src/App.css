@@ -16,10 +16,10 @@
 } 
 
 #sh {
-    width: 330px;
+    width: 310px;
     max-width: 90%;
     height: auto;
-    margin-top: -60px;
+    margin-top: -90px;
 }
 
 span {
@@ -28,7 +28,7 @@ span {
     color: transparent;
     font-size: 1.5vmax;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     padding: 10px;
 }
 
@@ -142,8 +142,10 @@ span {
 
 /* Animation for speak GIF */
 #speak {
-    opacity: 0; 
-    animation: fadeInOut 4s infinite; 
+    opacity: 0;
+    animation: fadeInOut 4s infinite;
+    margin-top: -20px;
+    /* margin-bottom: -20px; */
 }
 
 @keyframes fadeInOut {

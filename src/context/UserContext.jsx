@@ -1,7 +1,7 @@
 import React, { createContext, useState } from "react";
 import run from "../gemini";
 
-export const datacontext = createContext();
+export const DataContext = createContext();
 
 function UserContext({ children }) {
   let [speaking, setSpeaking] = useState(false);
@@ -165,12 +165,19 @@ function UserContext({ children }) {
         "Oh, so now you remember me? Took you long enough! Kya hua, Google ne jawab nahi diya?"
       );
       setResponse(true);
-    } else if (command.includes("hi neo")) {
+    } else if (command.includes("hi new")) {
       speak(
         "Oh, it’s you again! How may I roast I mean, assist you today? Jaldi bolo, busy hoon!"
       );
       setPrompt(
         "Oh, it’s you again! How may I roast—I mean, assist you today? Jaldi bolo, busy hoon!"
+      );
+    } else if (command.includes("hello hello")) {
+      speak(
+       "Hello, hello! Always happy to assist. Aap bataiye, main aapki kya madad kar sakta hoon?"
+      );
+      setPrompt(
+        "Hello, hello! Always happy to assist. Aap bataiye, main aapki kya madad kar sakta hoon?"
       );
       setResponse(true);
     } else if (command.includes("hello new")) {
@@ -260,7 +267,7 @@ function UserContext({ children }) {
     // Reset speaking state after 5 seconds for all responses
     setTimeout(() => {
       setSpeaking(false);
-    }, 10000);
+    }, 8000);
   }
 
   let value = {
@@ -275,7 +282,7 @@ function UserContext({ children }) {
 
   return (
     <div>
-      <datacontext.Provider value={value}>{children}</datacontext.Provider>
+      <DataContext.Provider value={value}>{children}</DataContext.Provider>
     </div>
   );
 }
