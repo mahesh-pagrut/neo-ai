@@ -1,51 +1,75 @@
-CoinPulse - Real-Time Crypto Tracker
-Get the pulse of the crypto market with CoinPulse!
-Introduction
-CoinPulse is a sleek and interactive cryptocurrency tracking app built with React.js, Vite, and Context API. It provides real-time market data, historical trends, and price insights using the CoinGecko API. With a futuristic dark theme, interactive charts, and currency conversion, CoinPulse is designed to keep users informed about the ever-changing crypto landscape.
+# Neo AI - Your Personal AI Assistant  
+## Your AI-powered virtual assistant for smart conversations!  
 
-🚀 Deployed App
-Live Demo: CoinPulse
+## Introduction
+## Introduction  
+**Neo AI** is an interactive and intelligent **AI-powered virtual assistant** built with **React.js, HTML, CSS, and the Gemini API.** It can answer queries, solve problems, and even throw in some savage replies for a fun and engaging experience.  
+With a **sleek UI**, **voice recognition**, and **smart responses**, Neo AI is designed to bring intelligence and entertainment to your conversations.
 
-📌 Features
-Real-Time Market Data: Fetches live crypto prices and trends.
-Historical Price Charts: Visualizes market trends using Google Charts.
-Multi-Currency Support: Switch between USD, EUR, and INR effortlessly.
-Dark-Themed UI: A futuristic and user-friendly design.
-Optimized Performanc: Next.js API routes, metadata display, and custom hooks.
-Fully Responsive: Works seamlessly on desktop, tablets, and mobile.
-🛠 Technology Stack
-Framework & Libraries
-React.js – Component-based UI framework.
-Vite – Lightning-fast build tool for optimized performance.
-Context API – State management for global currency selection.
-📌 Languages & Styling
-JavaScript (ES6) – Core programming language.
-CSS (Custom Styling) – Glassmorphism, dark mode, and responsive UI.
-React Icons – Crypto-inspired icons for better user experience.
-📦 Key Dependencies
-react-google-charts - Charting library for data visualization.
-react-icons - Modern icons for UI elements.
-react-router-dom - Navigation and routing.
-⚙ API Integration
-CoinGecko API - Fetches real-time and historical crypto market data.
-API Key Used - CoinGecko Free API (No authentication required)
-🚀 Getting Started
-📌 Prerequisites
-Ensure you have the following installed:
+## 🚀 Deployed App  
+**Live Demo:** [Neo AI](https://neo-ai-pi.vercel.app)  
 
-Node.js (LTS version recommended)
-npm or yarn (for package management)
-📂 Installation & Setup
-1️⃣ Clone the repository
-git clone https://github.com/your-username/coinpulse.git
-cd coinpulse 
-2️⃣ Install dependencies
+## 📌 Features  
+- **Voice Recognition:** Speak to Neo and get instant responses.  
+- **AI-Powered Responses:** Uses Gemini API for real-time intelligent replies.  
+- **Savage & Fun Replies:** Engaging and witty responses for common questions.  
+- **Interactive UI:** Modern, user-friendly, and responsive design.  
+- **Fast & Optimized:** Built with React.js for smooth and efficient performance.  
+
+---
+
+## 🛠 Technology Stack
+
+### **Framework & Libraries**  
+- **React.js** – Component-based UI framework.  
+- **HTML & CSS** – For styling and layout.  
+
+### 📌 **Languages & Styling**  
+- **JavaScript (ES6)** – Core programming language.  
+- **Tailwind CSS** – For a modern, responsive UI.  
+- **React Icons** – Modern icons for better user experience.  
+
+### 📦 **Key Dependencies**  
+- `react-icons` - Stylish icons for UI elements.  
+- `react-speech-recognition` - Enables voice input for interactions.  
+- `react-router-dom` - Handles navigation and routing.  
+
+
+### ⚙ **API Integration**  
+- **Gemini API** - Fetches AI-generated responses in real-time.
+  
+---
+
+## 🚀 Getting Started
+
+### 📌 **Prerequisites**  
+Ensure you have the following installed:  
+- **Node.js** (LTS version recommended)  
+- **npm** or **yarn** (for package management)  
+
+### 📂 **Installation & Setup**  
+
+#### 1️⃣ **Clone the repository**  
+```sh
+git clone https://github.com/mahesh-pagrut/neo-ai.git
+cd neo-ai
+```
+
+#### 2️⃣ Install dependencies
+```sh
 npm install
-3️⃣ Start the development server
-npm run dev
-CoinPulse will now be running at (http://localhost:3000/) 🎉
+```
 
-📸 Using CoinPulse
-1️⃣ Track Crypto Prices – View live market data and historical trends.
-2️⃣ Switch Currencies – Convert values between USD, EUR, and INR.
-3️⃣ Analyze Market Trends – Use interactive charts to track price movements.
+#### 3️⃣ Start the development server
+```sh
+npm run dev
+```
+
+**Neo AI will now be running at**  (http://localhost:3000/) 🎉
+
+### 📸 Using CoinPulse
+
+- 1️⃣ Ask Anything – Get instant answers with AI-powered responses.
+- 2️⃣ Voice Commands – Talk to Neo and interact naturally.
+- 3️⃣ Fun & Engaging – Experience witty and interactive conversations.
+
