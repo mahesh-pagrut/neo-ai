@@ -1,7 +1,6 @@
 # Neo AI - Your Personal AI Assistant  
 ## Your AI-powered virtual assistant for smart conversations!  
 
-## Introduction
 ## Introduction  
 **Neo AI** is an interactive and intelligent **AI-powered virtual assistant** built with **React.js, HTML, CSS, and the Gemini API.** It can answer queries, solve problems, and even throw in some savage replies for a fun and engaging experience.  
 With a **sleek UI**, **voice recognition**, and **smart responses**, Neo AI is designed to bring intelligence and entertainment to your conversations.
@@ -51,7 +50,7 @@ Ensure you have the following installed:
 
 #### 1️⃣ **Clone the repository**  
 ```sh
-git clone https://github.com/mahesh-pagrut/neo-ai.git
+https://github.com/mahesh-pagrut/neo-ai.git
 cd neo-ai
 ```
 
