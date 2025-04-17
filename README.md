@@ -66,7 +66,7 @@ npm run dev
 
 **Neo AI will now be running at**  (http://localhost:3000/) 🎉
 
-### 📸 Using Neo AI you can
+### 📸 Using Neo AI 
 
 - 1️⃣ Ask Anything – Get instant answers with AI-powered responses.
 - 2️⃣ Voice Commands – Talk to Neo and interact naturally.
