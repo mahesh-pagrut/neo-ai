@@ -19,7 +19,7 @@ With a **sleek UI**, **voice recognition**, and **smart responses**, Neo AI is d
 
 ## The Full Flow
 - Let's trace a typical interaction when you ask a complex question:
-
+ <img width="1892" height="788" alt="image" src="https://github.com/user-attachments/assets/7b652c56-f0cc-4414-95f3-3183d1f2982d" />
 - When a command isn't a simple, pre-programmed action, Neo seamlessly routes it to the aiResponse function, which then handles the communication with the powerful Gemini AI model. This allows Neo to provide intelligent, dynamic, and comprehensive answers to a wide range of questions.
 
 ## 🛠 Technology Stack
