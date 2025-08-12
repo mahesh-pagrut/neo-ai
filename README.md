@@ -17,6 +17,9 @@ With a **sleek UI**, **voice recognition**, and **smart responses**, Neo AI is d
 
 ---
 
+## The Full Flow
+- Let's trace a typical interaction when you ask a complex question:
+
 ## 🛠 Technology Stack
 
 ### **Framework & Libraries**  
