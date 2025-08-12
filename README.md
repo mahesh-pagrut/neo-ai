@@ -2,9 +2,7 @@
 ## Your AI-powered virtual assistant for smart conversations!  
 
 ## Introduction  
-**Neo AI** is an interactive and intelligent **AI-powered virtual assistant** built with **React.js, HTML, CSS, and the Gemini API.** It can answer queries, solve problems, and even throw in some savage replies for a fun and engaging experience.  
-With a **sleek UI**, **voice recognition**, and **smart responses**, Neo AI is designed to bring intelligence and entertainment to your conversations.
-
+**Neo AI** is a voice-activated personal assistant that allows you to interact with your computer using your voice. It can understand spoken commands to perform actions like opening websites, and for more complex questions, it leverages a powerful AI model (Gemini) to provide intelligent, spoken responses, making your computer interaction seamless and hands-free.
 ## 🚀 Deployed App  
 **Live Demo:** [Neo AI](https://neo-ai-pi.vercel.app)  
 
