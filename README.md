@@ -17,6 +17,7 @@
 
 ## Visual Flow
 <img width="808" height="797" alt="image" src="https://github.com/user-attachments/assets/237856ef-2b54-4969-854e-9bfebd3b7a81" />
+
 ---
 
 ## The Full Flow
